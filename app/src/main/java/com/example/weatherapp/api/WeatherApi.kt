@@ -1,5 +1,6 @@
 package com.example.weatherapp.api
 
+import androidx.contentpager.content.Query
 import retrofit2.http.GET
 import retrofit2.http.Query
 
