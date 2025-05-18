@@ -21,8 +21,11 @@ import androidx.compose.ui.unit.dp
 
 @Composable
 fun WeatherPage(viewModel: WeatherViewModel) {
-    var city by remember { mutableStateOf("")
+    var city by remember {
+        mutableStateOf("")
     }
+
+    val weatherResult = viewModel.weatherResult.collectAsState()
 
     Column (
         modifier = Modifier.padding(8.dp),
