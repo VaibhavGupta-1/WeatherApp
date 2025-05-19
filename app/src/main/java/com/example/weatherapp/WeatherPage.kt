@@ -25,7 +25,7 @@ fun WeatherPage(viewModel: WeatherViewModel) {
         mutableStateOf("")
     }
 
-    val weatherResult = viewModel.weatherResult.collectAsState()
+    val weatherResult = viewModel.weatherResult.observeAsState()
 
     Column (
         modifier = Modifier.padding(8.dp),
