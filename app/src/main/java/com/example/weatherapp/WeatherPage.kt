@@ -51,5 +51,6 @@ fun WeatherPage(viewModel: WeatherViewModel) {
                 Icon(imageVector = Icons.Default.Search, contentDescription = "Search for any location")
             }
         }
+        when(val result = weatherResult.value){
     }
 }
