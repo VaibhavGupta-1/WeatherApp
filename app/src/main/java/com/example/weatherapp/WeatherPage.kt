@@ -24,6 +24,8 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.weatherapp.api.NetworkResponse
@@ -100,9 +102,13 @@ fun WeatherDetails(data: WeatherModel) {
             Text(text = data.location.country, fontSize = 18.sp, color = Color.Gray)
         }
         Spacer(modifier = Modifier.padding(16.dp))
-        Text {
-            
-        }
+        Text(
+            text = data.location.temp_c.toString() + "°C",
+            fontSize = 56.sp,
+            fontWeight = FontWeight.Bold,
+            textAlign = TextAlign.Center,
+        )
+
         Text(text = data.current.condition.text)
         Text(text = data.current.temp_c.toString())
         }
