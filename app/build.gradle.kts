@@ -63,7 +63,7 @@ dependencies {
 
     implementation("androidx.compose.runtime:runtime-livedata:1.8.1")
 
-    implementation("io.coil-kt.coil3:coil-compose:3.2.0")
-    implementation("io.coil-kt.coil3:coil:2.4.0")
+    implementation("io.coil-kt.coil3:coil-compose:3.0.0")
+    implementation("io.coil-kt.coil3:coil-network-okhttp:3.0.0")
 
 }
