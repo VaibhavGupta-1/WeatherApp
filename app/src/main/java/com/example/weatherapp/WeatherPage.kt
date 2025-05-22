@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.material.icons.Icons
@@ -28,6 +29,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import coil3.compose.AsyncImage
 import com.example.weatherapp.api.NetworkResponse
 import com.example.weatherapp.api.WeatherModel
 
@@ -70,7 +72,7 @@ fun WeatherPage(viewModel: WeatherViewModel) {
                 CircularProgressIndicator()
             }
             is NetworkResponse.Success<*> -> {
-                Text(text = result.data.toString())
+                WeatherDetails(data = result.data as WeatherModel)
             }
             null -> {}
         }
@@ -101,16 +103,21 @@ fun WeatherDetails(data: WeatherModel) {
             Spacer(modifier = Modifier.weight(1f))
             Text(text = data.location.country, fontSize = 18.sp, color = Color.Gray)
         }
-        Spacer(modifier = Modifier.padding(16.dp))
+        Spacer(modifier = Modifier.height(16.dp))
         Text(
-            text = data.location.temp_c.toString() + "°C",
+            text = " ${data.current.temp_c}° c",
             fontSize = 56.sp,
             fontWeight = FontWeight.Bold,
             textAlign = TextAlign.Center,
         )
+        AsyncImage(
+            modifier = Modifier.size(120.dp),
+            model = "https:${data.current.condition.icon}".replace("64x64","128x128"),
+            contentDescription = "Condition Icon",
 
-        Text(text = data.current.condition.text)
-        Text(text = data.current.temp_c.toString())
-        }
+        )
+
+//        Text(text = data.current.condition.text)
+//        Text(text = data.current.temp_c.toString())
     }
 }
