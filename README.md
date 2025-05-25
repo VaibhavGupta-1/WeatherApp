@@ -96,6 +96,8 @@ Please fork the repo and submit a pull request for any improvements.
 This project is licensed under the MIT License – see the LICENSE file for details.
 
 🙋‍♂️ Author
+
 Vaibhav Gupta
+
 📧 LinkedIn:https://www.linkedin.com/in/vaibhavgupta-01
 📦 GitHub:https://github.com/VaibhavGupta-1
