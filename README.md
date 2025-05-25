@@ -58,14 +58,33 @@ Run the app on an emulator or physical device
 
 📂 Project Structure
 WeatherApp/
-├── data/
-│   └── model/, api/
-├── ui/
-│   └── screens/, components/
-├── utils/
-│   └── constants/, helpers/
-├── viewmodel/
-└── MainActivity.kt
+├── app/
+│ ├── manifests/
+│ │ └── AndroidManifest.xml
+│ ├── kotlin+java/
+│ │ └── com.example.weatherapp/
+│ │ ├── api/
+│ │ │ ├── Condition.kt
+│ │ │ ├── Constant.kt
+│ │ │ ├── Current.kt
+│ │ │ ├── Location.kt
+│ │ │ ├── NetworkResponse.kt
+│ │ │ ├── RetrofitInstance.kt
+│ │ │ ├── WeatherApi.kt
+│ │ │ └── WeatherModel.kt
+│ │ ├── ui.theme/
+│ │ ├── MainActivity.kt
+│ │ ├── WeatherPage.kt
+│ │ └── WeatherViewModel.kt
+├── res/
+├── build.gradle.kts (Project)
+├── build.gradle.kts (Module: app)
+├── proguard-rules.pro
+├── gradle.properties
+├── gradle-wrapper.properties
+├── libs.versions.toml
+├── local.properties
+└── settings.gradle.kts
 
 🤝 Contributing
 Contributions are welcome!
