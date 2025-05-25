@@ -37,13 +37,11 @@ import com.example.weatherapp.api.WeatherModel
 
 @Composable
 fun WeatherPage(viewModel: WeatherViewModel) {
-    var city by remember {
-        mutableStateOf("")
-    }
-
+    var city by remember { mutableStateOf("") }
     val weatherResult = viewModel.weatherResult.observeAsState()
-
     val keyBoardController = LocalSoftwareKeyboardController.current
+
+    val showGreeting = weatherResult.value == null
 
     Column (
         modifier = Modifier.padding(8.dp),
@@ -73,8 +71,13 @@ fun WeatherPage(viewModel: WeatherViewModel) {
 
         }
         Spacer(modifier = Modifier.height(56.dp))
-        Text(text="Hello User", fontSize = 30.sp, fontWeight = FontWeight.Bold)
-
+        if (showGreeting) {
+            Text(
+                text = "Hello User",
+                fontSize = 30.sp,
+                fontWeight = FontWeight.Bold
+            )
+        }
         when(val result = weatherResult.value){
             is NetworkResponse.Error -> {
                 Text(text = result.message)
