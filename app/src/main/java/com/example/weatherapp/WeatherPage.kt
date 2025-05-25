@@ -70,7 +70,11 @@ fun WeatherPage(viewModel: WeatherViewModel) {
             }) {
                 Icon(imageVector = Icons.Default.Search, contentDescription = "Search for any location")
             }
+
         }
+        Spacer(modifier = Modifier.height(56.dp))
+        Text(text="Hello User", fontSize = 30.sp, fontWeight = FontWeight.Bold)
+
         when(val result = weatherResult.value){
             is NetworkResponse.Error -> {
                 Text(text = result.message)
