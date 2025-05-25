@@ -57,25 +57,26 @@ const val API_KEY = "your_api_key_here"
 Run the app on an emulator or physical device
 
 📂 Project Structure
+
 WeatherApp/
 ├── app/
-│ ├── manifests/
-│ │ └── AndroidManifest.xml
-│ ├── kotlin+java/
-│ │ └── com.example.weatherapp/
-│ │ ├── api/
-│ │ │ ├── Condition.kt
-│ │ │ ├── Constant.kt
-│ │ │ ├── Current.kt
-│ │ │ ├── Location.kt
-│ │ │ ├── NetworkResponse.kt
-│ │ │ ├── RetrofitInstance.kt
-│ │ │ ├── WeatherApi.kt
-│ │ │ └── WeatherModel.kt
-│ │ ├── ui.theme/
-│ │ ├── MainActivity.kt
-│ │ ├── WeatherPage.kt
-│ │ └── WeatherViewModel.kt
+│   ├── manifests/
+│   │   └── AndroidManifest.xml
+│   ├── kotlin+java/
+│   │   └── com.example.weatherapp/
+│   │       ├── api/
+│   │       │   ├── Condition.kt
+│   │       │   ├── Constant.kt
+│   │       │   ├── Current.kt
+│   │       │   ├── Location.kt
+│   │       │   ├── NetworkResponse.kt
+│   │       │   ├── RetrofitInstance.kt
+│   │       │   ├── WeatherApi.kt
+│   │       │   └── WeatherModel.kt
+│   │       ├── ui.theme/
+│   │       ├── MainActivity.kt
+│   │       ├── WeatherPage.kt
+│   │       └── WeatherViewModel.kt
 ├── res/
 ├── build.gradle.kts (Project)
 ├── build.gradle.kts (Module: app)
@@ -85,6 +86,7 @@ WeatherApp/
 ├── libs.versions.toml
 ├── local.properties
 └── settings.gradle.kts
+
 
 🤝 Contributing
 Contributions are welcome!
