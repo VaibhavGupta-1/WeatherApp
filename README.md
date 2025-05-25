@@ -22,12 +22,12 @@ An elegant and minimal Android application built with **Kotlin** and **Jetpack C
 
 ## 📸 Screenshots
 
+## 📸 Screenshots
+
 | Home Screen | Search City | Weather Details |
 |-------------|-------------|-----------------|
-| ![Home](<img width="339" alt="image" src="https://github.com/user-attachments/assets/940a4e52-cc2b-49b5-a78c-bf9d8e6cc19b" />
-) | ![Search](![image](https://github.com/user-attachments/assets/c1123ce9-08ac-4166-a835-5cc69997638f)
-) | ![Details](<img width="350" alt="image" src="https://github.com/user-attachments/assets/df429786-82e6-4df8-80a1-7d68b92689cc" />
-) |
+| ![Home](https://github.com/user-attachments/assets/940a4e52-cc2b-49b5-a78c-bf9d8e6cc19b) | ![Search](https://github.com/user-attachments/assets/c1123ce9-08ac-4166-a835-5cc69997638f) | ![Details](https://github.com/user-attachments/assets/df429786-82e6-4df8-80a1-7d68b92689cc) |
+
 
 > *(Make sure to replace the image links with actual screenshot paths if available)*
 
