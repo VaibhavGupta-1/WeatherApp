@@ -32,7 +32,6 @@ An elegant and minimal Android application built with **Kotlin** and **Jetpack C
 | Home Screen | Search City | Weather Details |
 |-------------|-------------|-----------------|
 | ![Home](https://github.com/user-attachments/assets/940a4e52-cc2b-49b5-a78c-bf9d8e6cc19b) | ![Search](https://github.com/user-attachments/assets/c1123ce9-08ac-4166-a835-5cc69997638f) | ![Details](https://github.com/user-attachments/assets/64d0613e-179f-46ca-baf4-cff9c82391c7)
-|
 
 ---
 
